@@ -222,7 +222,7 @@ const Tickets: React.FC = () => {
                   <SelectValue placeholder="Status" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="">All Statuses</SelectItem>
+                  <SelectItem value="all">All Statuses</SelectItem>
                   <SelectItem value="open">Open</SelectItem>
                   <SelectItem value="in-progress">In Progress</SelectItem>
                   <SelectItem value="completed">Completed</SelectItem>
@@ -235,7 +235,7 @@ const Tickets: React.FC = () => {
                   <SelectValue placeholder="Date" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="">All Dates</SelectItem>
+                  <SelectItem value="all">All Dates</SelectItem>
                   <SelectItem value="2025-04">April 2025</SelectItem>
                   <SelectItem value="2025-03">March 2025</SelectItem>
                   <SelectItem value="2025-02">February 2025</SelectItem>
@@ -245,7 +245,7 @@ const Tickets: React.FC = () => {
             
             <div>
               <ToggleGroup type="single" value={statusFilter} onValueChange={setStatusFilter}>
-                <ToggleGroupItem value="" aria-label="All Tickets">
+                <ToggleGroupItem value="all" aria-label="All Tickets">
                   All
                 </ToggleGroupItem>
                 <ToggleGroupItem value="open" aria-label="Open Tickets">
