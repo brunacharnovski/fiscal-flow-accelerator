@@ -1,6 +1,6 @@
 
 import React from "react";
-import { Bell, Search, User, MessageSquare } from "lucide-react";
+import { Bell, Search, User, MessageSquare, Ticket } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
@@ -25,6 +25,10 @@ export const Header: React.FC = () => {
             <Link to="/communications" className="text-accounting-secondary hover:text-accounting-primary text-sm font-medium flex items-center gap-1">
               <MessageSquare size={14} />
               Communications
+            </Link>
+            <Link to="/tickets" className="text-accounting-secondary hover:text-accounting-primary text-sm font-medium flex items-center gap-1">
+              <Ticket size={14} />
+              Tickets
             </Link>
           </div>
         </div>
