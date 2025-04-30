@@ -1,7 +1,7 @@
 
 import React from "react";
 import { DashboardCard } from "./DashboardCard";
-import { News } from "lucide-react";
+import { Newspaper } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 interface NewsItem {
@@ -44,7 +44,7 @@ export const NewsCard: React.FC<NewsCardProps> = ({ className = "" }) => {
   return (
     <DashboardCard 
       title="Latest News" 
-      icon={<News size={18} />}
+      icon={<Newspaper size={18} />}
       actionText="View All"
       onActionClick={() => console.log("View all news")}
       className={className}
